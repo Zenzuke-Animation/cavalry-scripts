@@ -1,26 +1,29 @@
-# Zenzuke — Cavalry Scripts
+# cavalry-scripts
 
-Scripts for [Cavalry](https://cavalry.scenario.com/) by [Zenzuke](https://zenzuke.com).
-Free to use — see [LICENSE](LICENSE) (MIT + Commons Clause: don't sell the software).
+Keyframe and timing utilities for [Cavalry](https://cavalry.scenario.com/): two panels and three one-shot scripts.
 
-Web with docs in English and Spanish: https://zenzuke.com/scripts/
-
-## Tools
-
-| Tool | What it does | Download |
-|---|---|---|
-| **Keyframe Toolkit** | Panel: clone selected keyframes at the playhead, clone reversed (ping-pong), or reverse them in place. | [Script](../../releases/latest/download/KeyToolkit.js) |
-| **Time Offset** | Panel: shift layer bounds and keyframes N frames left/right of the playhead. Ignores locked/hidden layers (toggleable). | [Script](../../releases/latest/download/TimeOffset.js) |
-| **Clone Keyframes** (one-shot) | Clone selected keyframes starting at the playhead. | [Script](../../releases/latest/download/clone_keyframes.js) |
-| **Clone Reversed** (one-shot) | Clone selected keyframes reversed at the playhead. | [Script](../../releases/latest/download/clone_reversed.js) |
-| **Reverse In Place** (one-shot) | Reverse selected keyframes exactly where they sit on the timeline. | [Script](../../releases/latest/download/reverse_in_place.js) |
+Documentation in English and Spanish: https://zenzuke.com/scripts/
 
 ## Install
 
-1. Download a script from the table above (or from [Releases](../../releases)).
-2. In Cavalry: **Utility > Script Editor** (open the script) or use your script folder / shelf setup.
-3. Run it — panel scripts (Keyframe Toolkit, Time Offset) open their own UI window.
+1. Download a script from the table below (or from the [Releases](../../releases) page).
+2. Open it in Cavalry's Script Editor (**Utility > Script Editor**), or drop it into your Cavalry scripts folder so it stays available from the menu.
+3. Panel scripts (Keyframe Toolkit, Time Offset) open their own UI window; one-shot scripts act immediately on the current selection.
+
+## Tools
+
+| Tool | Type | What it does | Download |
+|---|---|---|---|
+| Keyframe Toolkit | Panel | Three keyframe actions in one place: clone the selected keyframes at the playhead, clone them reversed in time for ping-pong moves, or reverse them in place. | [KeyToolkit.js](../../releases/latest/download/KeyToolkit.js) |
+| Time Offset | Panel | Shifts the timing of the composition by N frames — layers, keyframes, or both — separately on each side of the playhead, with toggles to leave locked and hidden layers out. | [TimeOffset.js](../../releases/latest/download/TimeOffset.js) |
+| Clone Keyframes | One-shot | Clones the selected keyframes and pastes them at the playhead, keeping their original spacing. | [clone_keyframes.js](../../releases/latest/download/clone_keyframes.js) |
+| Clone Reversed | One-shot | Clones the selected keyframes at the playhead in mirrored chronological order — the quick way to a ping-pong move. | [clone_reversed.js](../../releases/latest/download/clone_reversed.js) |
+| Reverse In Place | One-shot | Reverses the selected keyframes exactly where they sit on the timeline: the first swaps with the last, with no overall time shift. | [reverse_in_place.js](../../releases/latest/download/reverse_in_place.js) |
 
 ## Versioning
 
-Each tool is versioned in [Releases](../../releases). `CHANGELOG.md` lists what changed.
+Current release: [v1.0.0](../../releases). Each tool carries its own version; `CHANGELOG.md` lists what changed.
+
+## License
+
+MIT + Commons Clause — free to use, including commercial work, but do not sell the software. See [LICENSE](LICENSE).
